@@ -12,10 +12,11 @@ html{
 }
 /* navigation bar */
 #navbar{
-display: flex;
+display:flex;
 align-items: center;
-position: sticky;
+position: fixed;
 top: 0px;
+width: 100%;
 }
 /* navigation bar:logo and image */
 #logo{
@@ -23,6 +24,7 @@ margin: 10px 10px;
 }
 #logo img{
 margin: 5px 10px ;
+
 }
 #navbar::before{
 content: "";
@@ -35,7 +37,8 @@ opacity: 10;
 }
 /* navigation bar:list styling */
 #navbar{
-position: relative;
+position: fixed;
+z-index: 9999;
 }
 #navbar ul{
  display: flex;
@@ -69,7 +72,7 @@ align-items: center;
 content: "";
 background: url("../background images/bgfinal.jpg") no-repeat center center/cover;
 position: absolute;
-height: 90%;
+height: 77%;
 width: 100%;
 top: 0px;
 left: 0px;
@@ -111,6 +114,7 @@ font-size: 20px;
 #client-section{
 margin: 10px;
 position: relative;
+margin-bottom: 20px;
 }
 #client-section::before{
 content: "";
@@ -136,6 +140,7 @@ padding: 40px;
 /* contact section  */
 #contact{
 position: relative;
+margin-bottom: 30px;
 }
 #contact::before{
 content: "";
@@ -166,6 +171,7 @@ width: 40%;
 font-size: 1.3rem;
 font-family: sans-serif;
 }
+
 /* feedback */
 #FEEDBACK{
 position: relative;
@@ -203,8 +209,8 @@ font-family: sans-serif;
 
 
 footer{
-background: brown;
-color: darkblue;
+background: rgb(8, 8, 8);
+color: rgb(254, 254, 255);
 padding: 9px 20px;
 }
 /* utility classes */
@@ -217,6 +223,7 @@ padding: 12px;
 font-family: cursive;
 font-size: 2.0rem;
 padding: 12px;
+
 }
 .btn{
 padding: 6px 20px;
